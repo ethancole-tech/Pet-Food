@@ -1,0 +1,68 @@
+[
+  {
+    "id": "p001",
+    "name": "Ocean Salmon Adult Cat Food 1.5kg",
+    "category": "cat",
+    "image": "assets/images/products/p001.jpg",
+    "price": 1600,
+    "originalPrice": 2000,
+    "availability": "in_stock",
+    "description": "Grain-free salmon recipe for adult cats. Supports a healthy coat and easy digestion, made with real deboned fish as the first ingredient.",
+    "tags": ["bestseller", "grain-free"]
+  },
+  {
+    "id": "p002",
+    "name": "Chicken & Rice Kitten Formula 1kg",
+    "category": "cat",
+    "image": "assets/images/products/p002.jpg",
+    "price": 950,
+    "originalPrice": 1250,
+    "availability": "in_stock",
+    "description": "Extra-protein formula built for growing kittens up to 12 months, with DHA to support healthy development.",
+    "tags": ["new"]
+  },
+  {
+    "id": "p003",
+    "name": "Tuna Feast Adult Cat Food 1.5kg",
+    "category": "cat",
+    "image": "assets/images/products/p003.jpg",
+    "price": 1500,
+    "originalPrice": 1800,
+    "availability": "out_of_stock",
+    "description": "A tuna-forward recipe cats go back to bowl after bowl for, balanced with taurine for heart and eye health.",
+    "tags": []
+  },
+  {
+    "id": "p004",
+    "name": "Chicken & Vegetable Adult Dog Food 3kg",
+    "category": "dog",
+    "image": "assets/images/products/p004.jpg",
+    "price": 2400,
+    "originalPrice": 3000,
+    "availability": "in_stock",
+    "description": "Balanced daily nutrition for adult dogs of all breeds, with real chicken and a blend of vegetables for fibre.",
+    "tags": ["bestseller"]
+  },
+  {
+    "id": "p005",
+    "name": "Lamb & Brown Rice Puppy Formula 2kg",
+    "category": "dog",
+    "image": "assets/images/products/p005.jpg",
+    "price": 2100,
+    "originalPrice": 2500,
+    "availability": "in_stock",
+    "description": "Gentle, easy-to-digest recipe for puppies up to 12 months, formulated to support healthy bone and joint growth.",
+    "tags": ["new"]
+  },
+  {
+    "id": "p006",
+    "name": "Senior Dog Formula — Joint Care 3kg",
+    "category": "dog",
+    "image": "assets/images/products/p006.jpg",
+    "price": 2600,
+    "originalPrice": 3250,
+    "availability": "in_stock",
+    "description": "Lower-calorie senior recipe with added glucosamine and chondroitin to support ageing joints.",
+    "tags": []
+  }
+]

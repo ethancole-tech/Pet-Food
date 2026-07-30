@@ -1,0 +1,11 @@
+[
+  {
+    "productId": "p001",
+    "customerName": "Sample customer — replace me",
+    "rating": 5,
+    "text": "This is placeholder text so you can see the review format. Delete this entry and add your first real customer review here once you have one.",
+    "verified": false,
+    "date": "2026-01-01",
+    "isPlaceholder": true
+  }
+]
