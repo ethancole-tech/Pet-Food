@@ -1,5 +1,5 @@
 /* =========================================================
-   PawPantry — Design tokens
+   Pet Food — Design tokens
    ========================================================= */
 :root {
   --bg: #FAF7F0;
@@ -86,9 +86,10 @@ img { max-width: 100%; display: block; }
 
 @media (max-width: 780px) {
   .nav-links { position: absolute; top: 100%; left: 0; right: 0; background: var(--paper);
-    flex-direction: column; gap: 0; border-bottom: 1px solid var(--border); display: none; }
+    flex-direction: column; gap: 0; border-bottom: 1px solid var(--border); display: none;
+    box-shadow: 0 16px 28px rgba(43,38,32,0.14); z-index: 60; }
   .nav-links.open { display: flex; }
-  .nav-links a { padding: 14px 24px; border-top: 1px solid var(--border); }
+  .nav-links a { display: block; width: 100%; padding: 14px 24px; border-top: 1px solid var(--border); }
   .nav-toggle { display: block; }
   .nav-cta { display: none; }
 }
