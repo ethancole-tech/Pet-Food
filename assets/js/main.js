@@ -8,6 +8,31 @@ function whatsappOrderLink(productName) {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
 }
 
+// Makes any <img data-fallback-base="path/to/name" data-fallback-exts="jpg,jpeg,png,webp">
+// automatically try each extension in order until one actually loads — so it no longer
+// matters whether your photo is a .jpg, .jpeg, .png, or .webp file.
+// Call setupImageFallbacks(container) again after injecting new images dynamically
+// (products.js already does this after rendering product cards).
+function setupImageFallbacks(root = document) {
+  root.querySelectorAll("img[data-fallback-base]:not([data-fallback-bound])").forEach(img => {
+    img.setAttribute("data-fallback-bound", "1");
+    const base = img.getAttribute("data-fallback-base");
+    const exts = (img.getAttribute("data-fallback-exts") || "jpg,jpeg,png,webp")
+      .split(",").map(e => e.trim()).filter(Boolean);
+    let i = 0;
+    function tryNext() {
+      if (i >= exts.length) {
+        img.parentElement.classList.add("img-fallback");
+        return;
+      }
+      img.src = `${base}.${exts[i]}`;
+      i++;
+    }
+    img.addEventListener("error", tryNext);
+    tryNext();
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   // Wire up every WhatsApp link on the page (footer, contact, reviews) so they
   // ALL update automatically from the single WHATSAPP_NUMBER value above —
@@ -40,6 +65,9 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("[data-year]").forEach(el => {
     el.textContent = new Date().getFullYear();
   });
+
+  // Try every static branding image (hero, about, logo) against multiple extensions
+  setupImageFallbacks();
 
   // Scroll reveal
   const revealEls = document.querySelectorAll(".reveal");

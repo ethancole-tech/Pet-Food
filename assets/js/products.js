@@ -10,6 +10,14 @@ function formatPKR(n) {
   return "Rs. " + Number(n).toLocaleString("en-PK");
 }
 
+function imageBaseAndExt(path) {
+  const m = path.match(/^(.*)\.([a-zA-Z0-9]+)$/);
+  if (!m) return { base: path, exts: ["jpg", "jpeg", "png", "webp"] };
+  const ext = m[1] ? m[2].toLowerCase() : "jpg";
+  const exts = Array.from(new Set([ext, "jpg", "jpeg", "png", "webp"]));
+  return { base: m[1], exts };
+}
+
 function productCardHTML(p) {
   const discount = getDiscountPercent(p.price, p.originalPrice);
   const inStock = p.availability === "in_stock";
@@ -20,14 +28,14 @@ function productCardHTML(p) {
   const priceHTML = p.originalPrice && p.originalPrice > p.price
     ? `<span class="price-now mono">${formatPKR(p.price)}</span><span class="price-was mono">${formatPKR(p.originalPrice)}</span>`
     : `<span class="price-now mono">${formatPKR(p.price)}</span>`;
+  const { base, exts } = imageBaseAndExt(p.image);
 
   return `
   <div class="card">
     <div class="card-media">
       ${stampHTML}
       ${stockHTML}
-      <img src="${p.image}" alt="${p.name}" loading="lazy"
-        onerror="this.parentElement.classList.add('img-fallback')">
+      <img data-fallback-base="${base}" data-fallback-exts="${exts.join(",")}" alt="${p.name}" loading="lazy">
     </div>
     <div class="card-body">
       <div class="card-cat">${p.category}</div>
@@ -61,6 +69,7 @@ async function renderProducts(containerId, options = {}) {
     if (options.limit) products = products.slice(0, options.limit);
     el.innerHTML = products.map(productCardHTML).join("") ||
       `<p>No products in this category yet.</p>`;
+    setupImageFallbacks(el);
   } catch (e) {
     el.innerHTML = `<p>Couldn't load products. If you're viewing this file directly on your computer,
       products.json won't load — run a local server (see README) or view it via GitHub Pages instead.</p>`;
@@ -105,11 +114,11 @@ async function renderProductDetail() {
       ? (reviews.reduce((s, r) => s + r.rating, 0) / reviews.length).toFixed(1)
       : null;
 
+    const { base: detailBase, exts: detailExts } = imageBaseAndExt(p.image);
     container.innerHTML = `
       <div class="detail-media">
         ${discount >= 20 ? `<div class="stamp"><b>-${discount}%</b><span>off</span></div>` : ""}
-        <img src="${p.image}" alt="${p.name}"
-          onerror="this.parentElement.classList.add('img-fallback')">
+        <img data-fallback-base="${detailBase}" data-fallback-exts="${detailExts.join(",")}" alt="${p.name}">
       </div>
       <div>
         <div class="card-cat">${p.category}</div>
@@ -131,6 +140,7 @@ async function renderProductDetail() {
           <a class="btn btn-outline" href="shop.html">← Back to shop</a>
         </div>
       </div>`;
+    setupImageFallbacks(container);
   } catch (e) {
     container.innerHTML = "<p>Couldn't load this product. Try viewing the live GitHub Pages site instead of the local file.</p>";
     console.error(e);
