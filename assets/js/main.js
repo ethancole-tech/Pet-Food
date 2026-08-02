@@ -1,6 +1,6 @@
 // ---- Site-wide config: EDIT THESE TWO LINES for your business ----
-const WHATSAPP_NUMBER = "923076064194"; // <-- replace with your real WhatsApp number, country code, no + or spaces
-const STORE_NAME = "Pet Food";
+const WHATSAPP_NUMBER = "923001234567"; // <-- replace with your real WhatsApp number, country code, no + or spaces
+const STORE_NAME = "PetFood";
 // --------------------------------------------------------------------
 
 function whatsappOrderLink(productName) {

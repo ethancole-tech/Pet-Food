@@ -94,7 +94,7 @@ async function renderProductDetail() {
 
     const discount = getDiscountPercent(p.price, p.originalPrice);
     const inStock = p.availability === "in_stock";
-    document.title = `${p.name} — PawPantry`;
+    document.title = `${p.name} — PetFood`;
 
     let reviews = [];
     try {
