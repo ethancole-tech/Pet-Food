@@ -1,5 +1,5 @@
 /* =========================================================
-   Pet Food — Design tokens
+   PetFood — Design tokens
    ========================================================= */
 :root {
   --bg: #FAF7F0;
@@ -160,11 +160,14 @@ img { max-width: 100%; display: block; }
 .card-media.img-fallback img,
 .detail-media.img-fallback img { display: none; }
 .card-media.img-fallback::after,
-.detail-media.img-fallback::after {
+.detail-media.img-fallback::after,
+.hero-art.img-fallback::after {
   content: "🐾";
   position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
   font-size: 2.4rem; color: var(--pine-mid);
 }
+.hero-art.img-fallback { position: relative; }
+.hero-art.img-fallback img { display: none; }
 
 /* Signature element: ink-stamp discount badge */
 .stamp {
