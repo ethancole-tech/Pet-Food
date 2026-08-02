@@ -22,7 +22,7 @@ function productCardHTML(p) {
     : `<span class="price-now mono">${formatPKR(p.price)}</span>`;
 
   return `
-  <div class="card reveal">
+  <div class="card">
     <div class="card-media">
       ${stampHTML}
       ${stockHTML}
