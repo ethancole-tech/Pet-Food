@@ -1,4 +1,4 @@
-# PawPantry — website source
+# PetFood — website source
 
 A ready-to-deploy pet food store. Static site, no backend, no build step —
 edit one file to change prices/stock, push to GitHub, done.
@@ -74,7 +74,10 @@ actually received — never invent them; it's illegal in most places and it's th
 fastest way to lose customer trust.
 
 **Change your WhatsApp number:**
-Open `assets/js/main.js`, edit the `WHATSAPP_NUMBER` value at the top (one line, used everywhere).
+Open `assets/js/main.js`, edit the `WHATSAPP_NUMBER` value at the top (one line). This one
+change updates every WhatsApp link on the whole site automatically — product "Order" buttons,
+the footer "WhatsApp us" links on every page, the Contact page number, and the "leave a
+review" link.
 
 ## 3. Previewing changes before you push (optional but recommended)
 
