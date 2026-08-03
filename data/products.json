@@ -1,68 +1,68 @@
 [
-  {
-    "id": "p001",
-    "name": "Ocean Salmon Adult Cat Food 1.5kg",
-    "category": "cat",
-    "image": "assets/images/products/poo1.jpeg",
-    "price": 1600,
-    "originalPrice": 2000,
-    "availability": "in_stock",
-    "description": "Grain-free salmon recipe for adult cats. Supports a healthy coat and easy digestion, made with real deboned fish as the first ingredient.",
-    "tags": ["bestseller", "grain-free"]
-  },
-  {
-    "id": "p002",
-    "name": "Chicken & Rice Kitten Formula 1kg",
-    "category": "cat",
-    "image": "assets/images/products/p002.jpeg",
-    "price": 950,
-    "originalPrice": 1250,
-    "availability": "in_stock",
-    "description": "Extra-protein formula built for growing kittens up to 12 months, with DHA to support healthy development.",
-    "tags": ["new"]
-  },
-  {
-    "id": "p003",
-    "name": "Tuna Feast Adult Cat Food 1.5kg",
-    "category": "cat",
-    "image": "assets/images/products/p003.jpeg",
-    "price": 1500,
-    "originalPrice": 1800,
-    "availability": "out_of_stock",
-    "description": "A tuna-forward recipe cats go back to bowl after bowl for, balanced with taurine for heart and eye health.",
-    "tags": []
-  },
-  {
-    "id": "p004",
-    "name": "Chicken & Vegetable Adult Dog Food 3kg",
-    "category": "dog",
-    "image": "assets/images/products/p004.jpeg",
-    "price": 2400,
-    "originalPrice": 3000,
-    "availability": "in_stock",
-    "description": "Balanced daily nutrition for adult dogs of all breeds, with real chicken and a blend of vegetables for fibre.",
-    "tags": ["bestseller"]
-  },
-  {
-    "id": "p005",
-    "name": "Lamb & Brown Rice Puppy Formula 2kg",
-    "category": "dog",
-    "image": "assets/images/products/p005.jpeg",
-    "price": 2100,
-    "originalPrice": 2500,
-    "availability": "in_stock",
-    "description": "Gentle, easy-to-digest recipe for puppies up to 12 months, formulated to support healthy bone and joint growth.",
-    "tags": ["new"]
-  },
-  {
-    "id": "p006",
-    "name": "Senior Dog Formula — Joint Care 3kg",
-    "category": "dog",
-    "image": "assets/images/products/p006.jpeg",
-    "price": 2600,
-    "originalPrice": 3250,
-    "availability": "in_stock",
-    "description": "Lower-calorie senior recipe with added glucosamine and chondroitin to support ageing joints.",
-    "tags": []
-  }
+{
+  "id": "p001",
+  "name": "Reflex Plus Adult Cat Food with Chicken 1.5kg",
+  "category": "cat",
+  "image": "assets/images/products/poo1.jpeg",
+  "price": null,
+  "originalPrice": null,
+  "availability": "unknown",
+  "description": "Super premium adult cat food with chicken. Supports digestion with XOS prebiotic effect and skin/coat health with Omega 3 & 6.",
+  "tags": ["adult", "chicken", "super-premium"]
+},
+{
+  "id": "p002",
+  "name": "NOSH Plus Meat & Veggie Formula 1.5kg",
+  "category": "cat",
+  "image": "assets/images/products/p002.jpeg",
+  "price": null,
+  "originalPrice": null,
+  "availability": "unknown",
+  "description": "All life stages premium cat food with meat & veggie formula. Supports strong immune system, healthy skin & coat (Omega 3 & 6), healthy digestion (fiber & prebiotics), and strong bones & teeth. No artificial flavors or colors.",
+  "tags": ["all-life-stages", "meat-veggie", "no-artificial"]
+},
+{
+  "id": "p003",
+  "name": "Royal Canin Persian Adult Cat Food",
+  "category": "cat",
+  "image": "assets/images/products/p003.jpeg",
+  "price": null,
+  "originalPrice": null,
+  "availability": "unknown",
+  "description": "Breed-specific nutrition tailored for adult Persian cats. Formulated to support long hair health with tailor-made kibble shape and nutrition.",
+  "tags": ["adult", "breed-specific", "persian", "long-hair"]
+},
+{
+  "id": "p004",
+  "name": "Josera Adult Poultry Cat Food 2kg",
+  "category": "cat",
+  "image": "assets/images/products/p004.jpeg",
+  "price": null,
+  "originalPrice": null,
+  "availability": "unknown",
+  "description": "Complete & balanced German-made adult cat food with poultry. Reduces hairball formation, supports urinary pH balance (6.0-6.5), and promotes shiny coat and healthy skin. No artificial colors, flavors, or preservatives.",
+  "tags": ["adult", "poultry", "made-in-germany", "anti-hairball"]
+},
+{
+  "id": "p005",
+  "name": "Bonacibo Adult Chicken with Rice 2kg",
+  "category": "cat",
+  "image": "assets/images/products/p005.jpeg",
+  "price": null,
+  "originalPrice": null,
+  "availability": "unknown",
+  "description": "Super premium adult cat food, chicken with rice. 32% protein, 18% fat. Highly digestible with glucosamine & chondroitin for joint support and Omega 3 & 6 for healthy skin and coat.",
+  "tags": ["adult", "chicken-rice", "high-protein", "joint-support"]
+},
+{
+  "id": "p006",
+  "name": "Me-O Adult Cat Food Tuna 1.1kg",
+  "category": "cat",
+  "image": "assets/images/products/p006.jpeg",
+  "price": null,
+  "originalPrice": null,
+  "availability": "unknown",
+  "description": "Complete nutrition tuna recipe for adult cats, made from real fish. Supports healthy skin & coat, healthy vision, and strong teeth and bones.",
+  "tags": ["adult", "tuna", "real-fish"]
+}
 ]
