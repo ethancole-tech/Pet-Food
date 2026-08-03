@@ -1,16 +1,16 @@
 [
-{
+ {
   "id": "p001",
   "name": "Reflex Plus Adult Cat Food with Chicken 1.5kg",
   "category": "cat",
   "image": "assets/images/products/poo1.jpeg",
   "price": 3999,
   "originalPrice": 3700,
-  "availability": "In-stock",
+  "availability": "in_stock",
   "description": "Super premium adult cat food with chicken. Supports digestion with XOS prebiotic effect and skin/coat health with Omega 3 & 6.",
   "tags": ["bestseller","adult", "chicken", "super-premium"]
-},
-{
+ },
+ {
   "id": "p002",
   "name": "NOSH Plus Meat & Veggie Formula 1.5kg",
   "category": "cat",
@@ -20,8 +20,8 @@
   "availability": "unknown",
   "description": "All life stages premium cat food with meat & veggie formula. Supports strong immune system, healthy skin & coat (Omega 3 & 6), healthy digestion (fiber & prebiotics), and strong bones & teeth. No artificial flavors or colors.",
   "tags": ["bestseller","all-life-stages", "meat-veggie", "no-artificial"]
-},
-{
+ },
+ {
   "id": "p003",
   "name": "Royal Canin Persian Adult Cat Food",
   "category": "cat",
@@ -31,8 +31,8 @@
   "availability": "unknown",
   "description": "Breed-specific nutrition tailored for adult Persian cats. Formulated to support long hair health with tailor-made kibble shape and nutrition.",
   "tags": ["adult", "breed-specific", "persian", "long-hair"]
-},
-{
+ },
+ {
   "id": "p004",
   "name": "Josera Adult Poultry Cat Food 2kg",
   "category": "cat",
@@ -42,8 +42,8 @@
   "availability": "unknown",
   "description": "Complete & balanced German-made adult cat food with poultry. Reduces hairball formation, supports urinary pH balance (6.0-6.5), and promotes shiny coat and healthy skin. No artificial colors, flavors, or preservatives.",
   "tags": ["adult", "poultry", "made-in-germany", "anti-hairball"]
-},
-{
+ },
+ {
   "id": "p005",
   "name": "Bonacibo Adult Chicken with Rice 2kg",
   "category": "cat",
@@ -53,8 +53,8 @@
   "availability": "unknown",
   "description": "Super premium adult cat food, chicken with rice. 32% protein, 18% fat. Highly digestible with glucosamine & chondroitin for joint support and Omega 3 & 6 for healthy skin and coat.",
   "tags": ["adult", "chicken-rice", "high-protein", "joint-support"]
-},
-{
+ },
+ {
   "id": "p006",
   "name": "Me-O Adult Cat Food Tuna 1.1kg",
   "category": "cat",
@@ -64,5 +64,5 @@
   "availability": "unknown",
   "description": "Complete nutrition tuna recipe for adult cats, made from real fish. Supports healthy skin & coat, healthy vision, and strong teeth and bones.",
   "tags": ["adult", "tuna", "real-fish"]
-}
+ }
 ]
